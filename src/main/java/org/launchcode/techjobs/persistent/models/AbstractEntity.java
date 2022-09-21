@@ -14,6 +14,7 @@ public abstract class AbstractEntity {
     @GeneratedValue
     private int id;
 
+
     @NotBlank
     @Size(max = 75)
     private String name;
@@ -29,6 +30,8 @@ public abstract class AbstractEntity {
     public void setName(String name) {
         this.name = name;
     }
+
+
 
     @Override
     public String toString() {
